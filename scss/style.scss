@@ -1,0 +1,228 @@
+//*********************************************
+/*! Assets */
+//*********************************************
+@import "_normalize";
+@import "_vars";
+@import "_mixins";
+@import "_fonts";
+
+/*! Default styles */
+
+/* 
+  Default font size browser
+  $browser-context: 16;
+  Rem -> Px use function "prem()"
+*/
+
+:root {
+  font-size: 62.5%;
+  /*! 14px */
+  --font-size--default: 1.4rem;
+  /*! 15px */
+  --font-size--small: 1.5rem;
+  /*! 16px */ 
+  --font-size--medium: 1.6rem;
+  /*! 20px */
+  --font-size--large: 2rem;
+  /*! 30px */
+  --font-size--extra-large: 3rem;
+  /*! 40px */ 
+  --font-size--accent: 4rem; 
+}
+
+::placeholder {
+  color: rgba(58, 38, 29, 0.6);
+  font-size: 12px;
+}
+
+::selection {
+  background-color: $accent;
+	color: #fff;
+}
+
+:focus, :active {
+  outline-style: none;
+  outline-width: 0px !important;
+  outline-color: none !important;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f4deb5;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  
+  overflow-x: hidden;
+
+  background-color: $bg-color-light;
+
+  font-family: $main-font;
+  font-size: var(--font-size--default);
+  font-weight: 400;
+
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+fieldset {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
+.main-title {
+  display: inline-block;
+  margin-bottom: 35px;
+  padding: 0 1.025em;
+  
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.225em;
+
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    width: 0.4em;
+    height: 0.4em;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &--brown {
+    color: $font-color-dark;
+
+    &::before, &::after {
+      background-color: #3A261D;
+    }
+  }
+
+  &--white {
+    color: $font-color-light;
+
+    &::before, &::after {
+      background-color: #fff;
+    }
+  }
+}
+
+.main-title.main-title--default {
+  &::before, &::after {
+    display: none;
+  }
+  
+  padding: 0;
+  text-align: center;
+}
+
+.visually-hidden {
+  margin: -1px;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  border: 0;
+
+  position: absolute;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 560px) {
+  .main-title {
+    padding: 0 1.323em;
+
+    font-size: 3.4rem;
+    line-height: 1.176em;
+  }
+}
+
+/*! Styling sprite */
+@import "sprite";
+
+.icon-switch-arrow {
+  stroke: #255429;
+  fill: none;
+}
+
+/*! User interface kit */
+@import "ui-kit";
+
+//*********************************************
+/*! Vendor */
+//*********************************************
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/components/navigation/navigation.scss";
+@import "../../node_modules/swiper/components/pagination/pagination.scss";
+@import "../../node_modules/swiper/components/scrollbar/scrollbar.scss";
+
+//*********************************************
+/*! Blocks */
+//*********************************************
+@import "blocks/header";
+@import "blocks/menu-navigation";
+@import "blocks/tabs";
+@import "blocks/menu-dishes";
+@import "blocks/dishes-category";
+@import "blocks/dish-card";
+@import "blocks/shares-block";
+@import "blocks/about";
+@import "blocks/banquets";
+@import "blocks/contacts";
+@import "blocks/delivery-card";
+@import "blocks/ordering-form";
+@import "blocks/basket";
+@import "blocks/footer";
+@import "blocks/form";

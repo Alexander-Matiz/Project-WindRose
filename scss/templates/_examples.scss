@@ -1,0 +1,53 @@
+/* Example of connecting a font */
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Light"), local("ProximaNova-Light"), 
+    url("../fonts/ProximaNovaLight.woff2") format("woff2"),
+    url("../fonts/ProximaNovaLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Example Rem -> Px */
+@function rem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem;
+}
+
+/*** Стиль оформления CSS-кода ***
+
+Основные правила:
+1. Стилилевые свойства, которые имеют цифровое значение находятся 
+выше свойств, которые имеет текстовое значение.
+  Исключения:
+  - Геометрия блока. Свойства display, box-sizing пишутся выше свойств с числовыми значениями.
+  - Оформление текста. Семейство шрифтов всегда находится выше свойств с числовыми значениями.
+  - Фон. Если свойства background-color или background имеют текстовое значение,
+  свойство все равно пишется выше свойств с числовыми значениями.
+  - Позиционирование. Свойство position всегда пишется выше свойств с числовыми значениями. 
+
+#example {
+  display: block;
+  margin: 20px 0;                // Геометрия блока.
+  padding: 25px 0;
+
+  list-style: none;
+  cursor: pointer;               // Общее оформление содержимого. 
+  overflow-x: hidden;
+
+  background-color: black;
+  border-radius: 50%;            // Фон.
+  border: 1px solid magenta;  
+
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 16px;                         // Оформление текста.
+  color: #fff;
+
+  position: absolute;
+  left: 0;                       // Позиционирование.
+  right: 0;
+
+  animation: fadeIn 1s infinite;
+  transform: translateY(-25%);   // Анимация, трансформация.
+  transition: color .3s;
+} */

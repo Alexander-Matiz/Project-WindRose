@@ -1,0 +1,135 @@
+.menu-dishes__inner {
+  padding: 100px 0;
+}
+
+.menu-dishes__container-content {
+  position: relative;
+}
+
+.menu-dishes__slider-container {
+  width: calc(100% + 36px);
+  transform: translateX(-18px);
+}
+
+.menu-dishes__slider-slide {
+  padding: 15px 18px 0;
+}
+
+.menu-dishes__slider-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-dishes__title-box {
+  text-align: center;
+}
+
+.menu-dishes__slider-pagination {
+  margin-top: 40px;
+  position: static;
+}
+
+.menu-dishes__slider-nav-btn > button.swiper-button-prev {
+  transform: translate(-50%, calc(50% - 18px));
+  left: -65px;
+}
+
+.menu-dishes__slider-nav-btn > button.swiper-button-next {
+  transform: translate(50%, calc(50% - 18px));
+  right: -65px;
+}
+
+.menu-dishes-mobile__slider-container {
+  display: block;
+}
+
+.menu-dishes.menu-delivery .menu-dishes__inner {
+  padding: 70px 0;
+}
+
+.menu-delivery .menu-dishes__slider-container {
+  padding-bottom: 30px;
+}
+
+.menu-dishes__slider-container.recommendation-slider {
+  padding-bottom: 75px;
+}
+
+.menu-dishes__inner.recommendation {
+  padding: 100px 0;
+}
+
+@media (max-width: 1332px) {
+  .menu-dishes__slider-nav-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .menu-dishes__slider-container {
+    width: auto;
+    transform: translateX(0);
+  }
+
+  .menu-dishes__slider-slide {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-dishes__inner {
+    padding: 50px 0 60px;
+  }
+  .menu-dishes__inner.recommendation {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .menu-dishes__slider-container {
+    display: none;
+  }
+
+  .menu-dishes-mobile__slider-container {
+
+    .menu-dishes-mobile__slide-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 290px;
+    }
+
+    .menu-dishes-mobile__slider-item.dish-card {
+      max-width: 140px;
+      margin: 0 0 0 10px;
+
+      &::before {
+        display: none;
+      }
+
+      &:nth-of-type(2n + 1) {
+        margin-left: 0;
+      }
+    }
+
+    .dish-card__img-box {
+      height: 92px;
+    }
+
+    .menu-dishes__slider-slide {
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  .menu-dishes__slider-pagination {
+    display: none;
+  }
+}
+
+@media (min-width: 561px) {
+  .menu-dishes-mobile__slider-container {
+    display: none;
+  }
+}
+

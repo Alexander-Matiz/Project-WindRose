@@ -1,0 +1,50 @@
+/*! Навигационное меню */
+
+.menu-navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  font-size: 2rem;
+  color: $font-color-dark;
+}
+
+.menu-navigation__list-item {
+  border-right: 1px solid rgba(58, 38, 29, 0.2);
+}
+
+.menu-navigation__list-item--active {
+  color: $accent;
+}
+
+.menu-navigation__list-item > a,
+.menu-navigation__list-item > span {
+  display: inline-block;
+  padding: 0.65em 2.70em;
+
+  font-weight: 600;
+  line-height: 1.2em;
+  color: inherit;
+  text-decoration: none;
+
+  transition: color .3s;
+
+  &:hover, &:focus {
+    color: $accent;
+  }
+}
+
+.menu-navigation__list-item:first-child > a,
+.menu-navigation__list-item:first-child > span {
+  padding-left: 0;
+}
+
+.menu-navigation__list-item:last-child > a,
+.menu-navigation__list-item:last-child > span {
+  padding-right: 0;
+}
+
+.menu-navigation__list-item:last-child {
+  border-right: none;
+}
