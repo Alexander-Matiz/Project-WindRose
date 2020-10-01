@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Название страницы</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="robots" content="index, follow, noodp">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="description" content="">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ресторан-кафе-бар - Роза ветров в г. Москва">
+  <meta property="og:description" content="Доставка еды из ресторана">
+  <meta property="og:image" content="images/logo-company.png">
+  <meta property="og:site_name" content="Главная ресторана-кафе-бара - Роза ветров">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#3b8296">
+  <meta name="msapplication-TileColor" content="#F4DEB5">
+
+  <meta name="theme-color" content="#F4DEB5">
+  <meta name="msapplication-navbutton-color" content="#F4DEB5">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#F4DEB5">
+
+  <meta name="author" content="Alexander Holub">
+  <meta name="copyright" content="Ресторан-кафе-бар - Роза ветров, 2020 г.">
+  <meta name="address" content="Москва, ул.Сторожевая д.4, стр.8">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Title - Оформление заказа на доставку еды -->
+
+</head>
+
+<body class="page">
+  <h1 class="visually-hidden">Корзина заказов из ресторана - Роза ветров</h1>
+
+  <header class="header header--bg">
+    <div class="container">
+      <div class="header__inner">
+        
+        <div class="header__top">
+          <div class="header__info">
+            <a class="header__tel-link" href="tel:+74952959094">
+              <svg class="icon icon-mobile">
+                <use xlink:href="images/sprites/sprite.svg#mobile"></use>
+              </svg>
+              <span class="header__tel">+74952959094</span>
+            </a>
+            <a class="header__booking-link" href="#">Забронировать столик</a>
+            <a class="header__basket-link" href="#">
+              <svg class="icon icon-shopping-basket">
+                <use xlink:href="images/sprites/sprite.svg#shopping-basket"></use>
+              </svg>
+              <span>190 руб</span>
+            </a>
+          </div>
+          <div class="logo header__logo">
+            <a href="/">
+              <img src="images/logo-company.png" alt="Логотип ресторана - Роза ветров">
+            </a>
+          </div>
+          <div class="header__btn">
+            <ul class="header__btn-list">
+              <li class="header__btn-item">
+                <a class="header__btn-link" href="#">
+                  <svg class="icon icon-yandex-food-logo">
+                    <use xlink:href="images/sprites/sprite.svg#yandex-food-logo"></use>
+                  </svg>
+                  <span>Заказать доставку</span>
+                </a>
+              </li>
+              <li class="header__btn-item">
+                <a class="header__btn-link" href="#">
+                  <svg class="icon icon-delivery-club-logo">
+                    <use xlink:href="images/sprites/sprite.svg#delivery-club-logo"></use>
+                  </svg>
+                  <span>Заказать доставку</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <nav class="menu-navigation">
+            <ul class="menu-navigation__list">
+              <li class="menu-navigation__list-item menu-navigation__list-item--active">
+                <span>Меню</span>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#shares" class="scroll-to">Акции</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#about" class="scroll-to">О ресторане</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#banquets" class="scroll-to">Банкеты</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#contacts" class="scroll-to">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div><!-- /.header__inner -->
+    </div><!-- /.container -->
+  </header>
+
+
+  <header class="header-mobile header-mobile__inner header--bg">
+
+    <div class="container">
+
+      <div class="header-mobile__top">
+      
+        <div class="logo header-mobile__logo">
+          <a href="/">
+            <img src="images/logo-company-mobile.png" alt="Логотип ресторана - Роза ветров">
+          </a>
+        </div>
+      
+        <div class="header-mobile__top-btn">
+          <a class="header-mobile__basket-link" href="#">
+            <svg class="icon icon-shopping-basket">
+              <use xlink:href="images/sprites/sprite.svg#shopping-basket"></use>
+            </svg>
+          </a>
+          <button class="menu-btn header-mobile__menu-btn">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+          </button>
+        </div>
+      
+      </div>
+      
+      <div class="header-mobile__bottom">
+        <a class="header__tel-link header__tel-link--mobile" href="tel:+74952959094">
+          <svg class="icon icon-mobile">
+            <use xlink:href="images/sprites/sprite.svg#mobile"></use>
+          </svg>
+          <span class="header__tel header__tel--mobile">+74952959094</span>
+        </a>
+        <a class="header__booking-link" href="#">Забронировать столик</a>
+      </div>
+
+      <div class="header-mobile__navigation-modal">
+
+        <button class="header-mobile__modal-close" type="button">
+          <svg class="icon icon-close">
+            <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+          </svg>
+        </button>
+
+        <div class="header-mobile__navigation-container">
+          
+          <nav class="header-mobile__navigation">
+            <ul class="header-mobile__menu-list">
+              <li class="header-mobile__menu-item header-mobile__menu-item--active">
+                <span>Меню</span>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#shares">Акции</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#about" class="scroll-to">О ресторане</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#banquets" class="scroll-to">Банкеты</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#contacts" class="scroll-to">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <ul class="header__btn-list">
+            <li class="header__btn-item header__btn-item--mobile">
+              <a class="header__btn-link" href="#">
+                <svg class="icon icon-yandex-food-logo">
+                  <use xlink:href="images/sprites/sprite.svg#yandex-food-logo"></use>
+                </svg>
+                <span>Заказать доставку</span>
+              </a>
+            </li>
+            <li class="header__btn-item header__btn-item--mobile">
+              <a class="header__btn-link" href="#">
+                <svg class="icon icon-delivery-club-logo">
+                  <use xlink:href="images/sprites/sprite.svg#delivery-club-logo"></use>
+                </svg>
+                <span>Заказать доставку</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div><!-- /.container -->
+    
+  </header>
+
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <span>Корзина</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="matin-content">
+
+    <section class="basket">
+      <h2 class="visually-hidden">Корзина с заказами</h2>
+
+      <div class="container">
+
+        <div class="basket__title-box">
+          <p class="main-title main-title--white">Ваш заказ</p>
+        </div>
+
+        <div class="basket__inner">
+
+          <p class="basket__column-name basket__column-name-amount">Кол-во</p>
+          <p class="basket__column-name basket__column-name-price">Цена</p>
+
+          <div class="basket__item">
+
+            <div class="basket__item-left">
+              <div class="basket__item-img-box">
+                <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+              </div>
+
+              <div class="basket__item-left-text">
+                <p class="basket__item-title">Филе из курицы с соусом тар-тар</p>
+                <p class="basket__item-weight">250 гр</p>
+                <p class="basket__item-price basket__item-price-text--mobile">190 руб</p>
+                <div class="basket__item-amount-btn basket__item-amount-btn--mobile">
+                  <button type="button">+</button>
+                  <button type="button">-</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="basket__item-amount-btn">
+              <button type="button">+</button>
+              <button type="button">-</button>
+            </div>
+
+            <div class="basket__item-price">
+              <p class="basket__item-price-text">190 руб</p>
+            </div>
+
+            <div class="basket__item-delete">
+              <button type="button">
+                <svg class="icon icon-cancel">
+                  <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                </svg>
+              </button>
+            </div>
+
+          </div><!-- /.basket__item -->
+
+          <div class="basket__item">
+          
+            <div class="basket__item-left">
+              <div class="basket__item-img-box">
+                <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+              </div>
+          
+              <div class="basket__item-left-text">
+                <p class="basket__item-title">Филе из курицы с соусом тар-тар</p>
+                <p class="basket__item-weight">250 гр</p>
+              </div>
+            </div>
+          
+            <div class="basket__item-amount-btn">
+              <button type="button">+</button>
+              <button type="button">-</button>
+            </div>
+          
+            <div class="basket__item-price">
+              <p class="basket__item-price-text">190 руб</p>
+            </div>
+          
+            <div class="basket__item-delete">
+              <button type="button">
+                <svg class="icon icon-cancel">
+                  <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                </svg>
+              </button>
+            </div>
+          
+          </div><!-- /.basket__item -->
+
+          <div class="basket__item">
+          
+            <div class="basket__item-left">
+              <div class="basket__item-img-box">
+                <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+              </div>
+          
+              <div class="basket__item-left-text">
+                <p class="basket__item-title">Филе из курицы с соусом тар-тар</p>
+                <p class="basket__item-weight">250 гр</p>
+              </div>
+            </div>
+          
+            <div class="basket__item-amount-btn">
+              <button type="button">+</button>
+              <button type="button">-</button>
+            </div>
+          
+            <div class="basket__item-price">
+              <p class="basket__item-price-text">190 руб</p>
+            </div>
+          
+            <div class="basket__item-delete">
+              <button type="button">
+                <svg class="icon icon-cancel">
+                  <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                </svg>
+              </button>
+            </div>
+          
+          </div><!-- /.basket__item -->
+
+          <div class="basket__items-footer">
+            <p class="basket__total-price">
+              К оплате: <span class="basket__total-price-text">570 руб</span>
+            </p>
+            <button class="basket__btn btn btn--sm btn--white" type="submit">Оформить заказ</button>
+          </div>
+
+        </div><!-- /.basket__inner -->
+
+      </div><!-- /.container -->
+
+    </section>
+
+    <section class="menu-dishes menu-dishes__inner recommendation">
+      <h2 class="visually-hidden">Меню для доставки из ресторана - Роза ветров</h2>
+      <div class="container">
+        
+        <div class="menu-dishes__title-box">
+          <p class="main-title main-title--brown main-title--default">Рекомендуем попробовать</p>
+        </div>
+        
+        <div class="swiper-container menu-dishes__slider-container recommendation-slider">
+          <div class="menu-dishes__slider">
+        
+            <div class="swiper-wrapper menu-dishes__slider-wrapper">
+        
+              <div class="menu-dishes__slider-slide swiper-slide">
+
+                <div class="menu-dishes__slider-item dish-card dish-card--btn-basket">
+                  <div class="dish-card__img-box">
+                    <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+                  </div>
+                  <h3 class="dish-card__title">Филе из курицы с соусом тар-тар</h3>
+                  <div class="dish-card__footer">
+                    <p class="dish-card__dish-weight">250 гр</p>
+                    <p class="dish-card__price">190 руб</p>
+                  </div>
+                  <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                </div>
+                
+                <div class="menu-dishes__slider-item dish-card dish-card--btn-basket">
+                  <div class="dish-card__img-box">
+                    <img src="images/content/cold-snacks/cold-snacks-item-5.jpg" alt="Филе из свинины с грибным соусом">
+                  </div>
+                  <h3 class="dish-card__title">Филе из свинины с грибным соусом</h3>
+                  <div class="dish-card__footer">
+                    <p class="dish-card__dish-weight">250 гр</p>
+                    <p class="dish-card__price">790 руб</p>
+                  </div>
+                  <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                </div>
+                
+                <div class="menu-dishes__slider-item dish-card dish-card--btn-basket">
+                  <div class="dish-card__img-box">
+                    <img src="images/content/cold-snacks/cold-snacks-item-6.jpg" alt="Фарфале с семгой">
+                  </div>
+                  <h3 class="dish-card__title">Фарфале с семгой</h3>
+                  <div class="dish-card__footer">
+                    <p class="dish-card__dish-weight">250 гр</p>
+                    <p class="dish-card__price">690 руб</p>
+                  </div>
+                  <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                </div>
+                
+                <div class="menu-dishes__slider-item dish-card dish-card--btn-basket">
+                  <div class="dish-card__img-box">
+                    <img src="images/content/cold-snacks/cold-snacks-item-7.jpg" alt="Стейк из Семги в сливочно-шпинатном соусе">
+                  </div>
+                  <h3 class="dish-card__title">Стейк из Семги в сливочно-шпинатном соусе</h3>
+                  <div class="dish-card__footer">
+                    <p class="dish-card__dish-weight">250 гр</p>
+                    <p class="dish-card__price">1090 руб</p>
+                  </div>
+                  <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                </div>
+                
+                <div class="menu-dishes__slider-item dish-card dish-card--btn-basket">
+                  <div class="dish-card__img-box">
+                    <img src="images/content/cold-snacks/cold-snacks-item-8.jpg" alt="Фетучини с курицей и грибами">
+                  </div>
+                  <h3 class="dish-card__title">Фетучини с курицей и грибами</h3>
+                  <div class="dish-card__footer">
+                    <p class="dish-card__dish-weight">250 гр</p>
+                    <p class="dish-card__price">490 руб</p>
+                  </div>
+                  <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                </div>
+                
+                <div class="menu-dishes__slider-item dish-card dish-card--btn-basket">
+                  <div class="dish-card__img-box">
+                    <img src="images/content/cold-snacks/cold-snacks-item-9.jpg" alt="Судак с грибным гратеном">
+                  </div>
+                  <h3 class="dish-card__title">Судак с грибным гратеном</h3>
+                  <div class="dish-card__footer">
+                    <p class="dish-card__dish-weight">1050 гр</p>
+                    <p class="dish-card__price">290 руб</p>
+                  </div>
+                  <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                </div>
+                
+              </div><!-- /.menu-dishes__slider-slide .swiper-slide -->
+
+            </div><!-- /.swiper-wrapper .menu-dishes__slider-wrapper -->
+
+            <div class="menu-dishes__slider-pagination swiper-pagination slider-pagination"></div>
+            
+          </div><!-- /.menu-dishes__slider -->
+
+          <div class="menu-dishes__slider-nav-btn slider-nav-btn">
+            <button class="swiper-button-prev menu-dishes__btn-prev">
+              <svg class="icon icon-switch-arrow">
+                <use xlink:href="images/sprites/sprite.svg#switch-arrow"></use>
+              </svg>
+            </button>
+            <button class="swiper-button-next menu-dishes__btn-next">
+              <svg class="icon icon-switch-arrow">
+                <use xlink:href="images/sprites/sprite.svg#switch-arrow"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div><!-- /.swiper-container .menu-dishes__slider-container -->
+
+        <div class="swiper-container menu-dishes-mobile__slider-container recommendation-slider-mobile">
+          <div class="menu-dishes__slider">
+        
+            <div class="swiper-wrapper menu-dishes__slider-wrapper">
+        
+              <div class="swiper-slide menu-dishes__slider-slide">
+
+                <div class="menu-dishes-mobile__slide-container">
+                  <div class="dish-card dish-card--btn-basket menu-dishes-mobile__slider-item">
+                    <div class="dish-card__img-box">
+                      <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Котлеты из телятины с рисом">
+                    </div>
+                    <h3 class="dish-card__title">Котлеты из телятины с рисом</h3>
+
+                    <div class="dish-card__mobile-modal">
+                      <div class="dish-card__modal-container">
+                        <button class="dishes-category-mobile__modal-close dish-card__modal-close" type="button">
+                          <svg class="icon icon-close">
+                            <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                          </svg>
+                        </button>
+                        <div class="dish-card__mobile-modal-img">
+                          <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+                        </div>
+                        <p class="dish-card__title">Филе из курицы с соусом тар-тар</p>
+                        <div class="dish-card__footer">
+                          <p class="dish-card__dish-weight">250 гр</p>
+                          <p class="dish-card__price">190 руб</p>
+                        </div>
+                        <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="dish-card dish-card--btn-basket menu-dishes-mobile__slider-item">
+                    <div class="dish-card__img-box">
+                      <img src="images/content/cold-snacks/cold-snacks-item-2.jpg" alt="Дорадо жареная">
+                    </div>
+                    <h3 class="dish-card__title">Дорадо жареная</h3>
+
+                    <div class="dish-card__mobile-modal">
+                      <div class="dish-card__modal-container">
+                        <button class="dishes-category-mobile__modal-close dish-card__modal-close" type="button">
+                          <svg class="icon icon-close">
+                            <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                          </svg>
+                        </button>
+                        <div class="dish-card__mobile-modal-img">
+                          <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+                        </div>
+                        <p class="dish-card__title">Филе из курицы с соусом тар-тар</p>
+                        <div class="dish-card__footer">
+                          <p class="dish-card__dish-weight">250 гр</p>
+                          <p class="dish-card__price">190 руб</p>
+                        </div>
+                        <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="dish-card dish-card--btn-basket menu-dishes-mobile__slider-item">
+                    <div class="dish-card__img-box">
+                      <img src="images/content/cold-snacks/cold-snacks-item-3.jpg" alt="Филе из свинины с грибным соусом ">
+                    </div>
+                    <h3 class="dish-card__title">Филе из свинины с грибным соусом</h3>
+
+                    <div class="dish-card__mobile-modal">
+                      <div class="dish-card__modal-container">
+                        <button class="dishes-category-mobile__modal-close dish-card__modal-close" type="button">
+                          <svg class="icon icon-close">
+                            <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                          </svg>
+                        </button>
+                        <div class="dish-card__mobile-modal-img">
+                          <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+                        </div>
+                        <p class="dish-card__title">Филе из курицы с соусом тар-тар</p>
+                        <div class="dish-card__footer">
+                          <p class="dish-card__dish-weight">250 гр</p>
+                          <p class="dish-card__price">190 руб</p>
+                        </div>
+                        <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="dish-card dish-card--btn-basket menu-dishes-mobile__slider-item">
+                    <div class="dish-card__img-box">
+                      <img src="images/content/cold-snacks/cold-snacks-item-4.jpg" alt="Фарфале с семгой">
+                    </div>
+                    <h3 class="dish-card__title">Фарфале с семгой</h3>
+
+                    <div class="dish-card__mobile-modal">
+                      <div class="dish-card__modal-container">
+                        <button class="dishes-category-mobile__modal-close dish-card__modal-close" type="button">
+                          <svg class="icon icon-close">
+                            <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+                          </svg>
+                        </button>
+                        <div class="dish-card__mobile-modal-img">
+                          <img src="images/content/cold-snacks/cold-snacks-item-1.jpg" alt="Филе из курицы с соусом тар-тар">
+                        </div>
+                        <p class="dish-card__title">Филе из курицы с соусом тар-тар</p>
+                        <div class="dish-card__footer">
+                          <p class="dish-card__dish-weight">250 гр</p>
+                          <p class="dish-card__price">190 руб</p>
+                        </div>
+                        <button class="btn btn--green btn--lg dish-card__basket-btn" type="button">В корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div><!-- /.swiper-slide .menu-dishes__slider-slide -->
+
+              <div class="swiper-slide menu-dishes__slider-slide">
+              
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, sed.  
+              
+              </div><!-- /.swiper-slide .menu-dishes__slider-slide -->
+        
+            </div><!-- /.swiper-wrapper .menu-dishes__slider-wrapper -->
+        
+            <div class="menu-dishes__slider-pagination swiper-pagination slider-pagination"></div>
+            <div class="swiper-scrollbar menu-dishes__scrollbal"></div>
+        
+          </div><!-- /.menu-dishes__slider -->
+        </div><!-- /.swiper-container .menu-dishes__slider-container -->
+
+      </div><!-- /.container -->
+    </section>
+
+  </main>
+
+  <div class="footer" style="background-image: url('images/footer-bg-image.jpg');">
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div class="footer__info-left">
+          <a class="footer__tel-link" href="tel:+74952959094">
+            <svg class="icon icon-mobile">
+              <use xlink:href="images/sprites/sprite.svg#mobile"></use>
+            </svg>
+            <span class="footer__tel">+74952959094</span>
+          </a>
+          <button class="footer__booking-link" type="button">Забронировать столик</button>
+        </div>
+
+        <div class="logo footer__logo">
+          <a href="/">
+            <picture>
+              <source srcset="images/logo-company-footer.png" media="(max-width: 781px)">
+              <img src="images/logo-company.png" alt="Логотип ресторана - Роза ветров">
+            </picture>
+          </a>
+        </div>
+
+        <div class="footer__info-right">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" target="_blank">
+                <svg class="icon icon-instagram-logo">
+                  <use xlink:href="images/sprites/sprite.svg#instagram-logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">Роза Ветров. 2020 г.</p>
+        </div>
+      
+      </div><!-- /.footer__inner -->
+
+      <p class="footer__copyright-bottom">Роза Ветров. 2020 г.</p>
+
+    </div><!-- /.container -->
+  </div><!-- /.footer -->
+
+  <div class="form form-contact-us">
+    <div class="form-feedback__inner">
+  
+      <span class="form-feedback__icon">
+        <svg class="icon icon-smile">
+          <use xlink:href="images/sprites/sprite.svg#smile"></use>
+        </svg>
+      </span>
+      <button type="button" class="form-feedback__close">
+        <svg class="icon icon-cancel">
+          <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+        </svg>
+      </button>
+  
+      <p class="form__title">Мы свяжемся с Вами!</p>
+      <p class="form__text">Заполните форму и в течение 10 минут мы свяжемся с Вами.</p>
+  
+      <form class="form-feedback__form" name="form-contact-us" action="/">
+
+        <div class="form-success">
+          <span class="form-success__icon">
+            <svg class="icon icon-smile">
+              <use xlink:href="images/sprites/sprite.svg#smile"></use>
+            </svg>
+          </span>
+        
+          <p class="form__title">Спасибо за заказ!</p>
+          <p class="form__text">В течение 10 минут мы свяжемся с вами для подтверждения заказа.</p>
+        
+          <button class="btn btn--sm btn--green form-feedback__btn form-success__btn" type="button">Вернуться на главную</button>
+        </div>
+        
+        <input type="hidden" name="project_name" value="Wind Rose">
+        <input type="hidden" name="project_email" value="mail@gmail.com">
+        <input type="hidden" name="form_subject" value="Заяка с сайта - Роза ветров">
+
+        <div class="form-feedback__form-group form__group">
+          <input class="form-input form-feedback__input" type="tel" inputmode="tel" name="client-tel" placeholder="Телефон*" required>
+          <input class="form-input form-feedback__input" type="text" inputmode="text" name="client-name" placeholder="Имя">
+        </div>
+        <button class="btn btn--sm btn--green form-feedback__btn" type="submit">Отправить</button>
+      </form>
+  
+    </div>
+  </div>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

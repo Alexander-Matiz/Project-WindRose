@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Название страницы</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta name="robots" content="index, follow, noodp">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="description" content="">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ресторан-кафе-бар - Роза ветров в г. Москва">
+  <meta property="og:description" content="Доставка еды из ресторана">
+  <meta property="og:image" content="images/logo-company.png">
+  <meta property="og:site_name" content="Главная ресторана-кафе-бара - Роза ветров">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#3b8296">
+  <meta name="msapplication-TileColor" content="#F4DEB5">
+
+  <meta name="theme-color" content="#F4DEB5">
+  <meta name="msapplication-navbutton-color" content="#F4DEB5">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#F4DEB5">
+
+  <meta name="author" content="Alexander Holub">
+  <meta name="copyright" content="Ресторан-кафе-бар - Роза ветров, 2020 г.">
+  <meta name="address" content="Москва, ул.Сторожевая д.4, стр.8">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Title - Оформление заказа на доставку еды -->
+
+</head>
+
+<body class="page">
+  <h1 class="visually-hidden">Оформление заказа из ресторана - Роза ветров</h1>
+
+  <header class="header header--bg">
+    <div class="container">
+      <div class="header__inner">
+        
+        <div class="header__top">
+          <div class="header__info">
+            <a class="header__tel-link" href="tel:+74952959094">
+              <svg class="icon icon-mobile">
+                <use xlink:href="images/sprites/sprite.svg#mobile"></use>
+              </svg>
+              <span class="header__tel">+74952959094</span>
+            </a>
+            <a class="header__booking-link" href="#">Забронировать столик</a>
+            <a class="header__basket-link" href="#">
+              <svg class="icon icon-shopping-basket">
+                <use xlink:href="images/sprites/sprite.svg#shopping-basket"></use>
+              </svg>
+              <span>190 руб</span>
+            </a>
+          </div>
+          <div class="logo header__logo">
+            <a href="/">
+              <img src="images/logo-company.png" alt="Логотип ресторана - Роза ветров">
+            </a>
+          </div>
+          <div class="header__btn">
+            <ul class="header__btn-list">
+              <li class="header__btn-item">
+                <a class="header__btn-link" href="#">
+                  <svg class="icon icon-yandex-food-logo">
+                    <use xlink:href="images/sprites/sprite.svg#yandex-food-logo"></use>
+                  </svg>
+                  <span>Заказать доставку</span>
+                </a>
+              </li>
+              <li class="header__btn-item">
+                <a class="header__btn-link" href="#">
+                  <svg class="icon icon-delivery-club-logo">
+                    <use xlink:href="images/sprites/sprite.svg#delivery-club-logo"></use>
+                  </svg>
+                  <span>Заказать доставку</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <nav class="menu-navigation">
+            <ul class="menu-navigation__list">
+              <li class="menu-navigation__list-item menu-navigation__list-item--active">
+                <span>Меню</span>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#shares" class="scroll-to">Акции</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#about" class="scroll-to">О ресторане</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#banquets" class="scroll-to">Банкеты</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="menu-navigation__list-item">
+                <a href="#contacts" class="scroll-to">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div><!-- /.header__inner -->
+    </div><!-- /.container -->
+  </header>
+
+
+  <header class="header-mobile header-mobile__inner header--bg">
+
+    <div class="container">
+
+      <div class="header-mobile__top">
+      
+        <div class="logo header-mobile__logo">
+          <a href="/">
+            <img src="images/logo-company-mobile.png" alt="Логотип ресторана - Роза ветров">
+          </a>
+        </div>
+      
+        <div class="header-mobile__top-btn">
+          <a class="header-mobile__basket-link" href="#">
+            <svg class="icon icon-shopping-basket">
+              <use xlink:href="images/sprites/sprite.svg#shopping-basket"></use>
+            </svg>
+          </a>
+          <button class="menu-btn header-mobile__menu-btn">
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+            <span class="menu-btn__line"></span>
+          </button>
+        </div>
+      
+      </div>
+      
+      <div class="header-mobile__bottom">
+        <a class="header__tel-link header__tel-link--mobile" href="tel:+74952959094">
+          <svg class="icon icon-mobile">
+            <use xlink:href="images/sprites/sprite.svg#mobile"></use>
+          </svg>
+          <span class="header__tel header__tel--mobile">+74952959094</span>
+        </a>
+        <a class="header__booking-link" href="#">Забронировать столик</a>
+      </div>
+
+      <div class="header-mobile__navigation-modal">
+
+        <button class="header-mobile__modal-close" type="button">
+          <svg class="icon icon-close">
+            <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+          </svg>
+        </button>
+
+        <div class="header-mobile__navigation-container">
+          
+          <nav class="header-mobile__navigation">
+            <ul class="header-mobile__menu-list">
+              <li class="header-mobile__menu-item header-mobile__menu-item--active">
+                <span>Меню</span>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#shares">Акции</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#about" class="scroll-to">О ресторане</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#banquets" class="scroll-to">Банкеты</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="header-mobile__menu-item">
+                <a href="#contacts" class="scroll-to">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <ul class="header__btn-list">
+            <li class="header__btn-item header__btn-item--mobile">
+              <a class="header__btn-link" href="#">
+                <svg class="icon icon-yandex-food-logo">
+                  <use xlink:href="images/sprites/sprite.svg#yandex-food-logo"></use>
+                </svg>
+                <span>Заказать доставку</span>
+              </a>
+            </li>
+            <li class="header__btn-item header__btn-item--mobile">
+              <a class="header__btn-link" href="#">
+                <svg class="icon icon-delivery-club-logo">
+                  <use xlink:href="images/sprites/sprite.svg#delivery-club-logo"></use>
+                </svg>
+                <span>Заказать доставку</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div><!-- /.container -->
+    
+  </header>
+
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="#">Корзина</a>
+        </li>
+        <li class="breadcrumbs__list-item breadcrumbs__list-item--active">
+          <span>Оформление заказа</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="matin-content">
+
+    <section class="ordering">
+      <h2 class="visually-hidden">Доставка еды из ресторана - Роза ветров</h2>
+      
+      <div class="container">
+        
+        <div class="shares-block__title-box">
+          <p class="main-title main-title--brown">Получите ваш заказ</p>
+        </div>
+
+        <div class="tab-nav">
+          <button class="tab-nav__item btn ordering-tab__btn btn--lg is-active" type="button" data-tab-name="ordering-tab-1">Доставка</button>
+          <button class="tab-nav__item btn btn ordering-tab__btn btn--lg" type="button" data-tab-name="ordering-tab-2">Самовывоз</button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab ordering-tab__content is-active ordering-tab-1">
+
+            <form class="ordering-form" action="/" name="form-delivery">
+              
+              <input type="hidden" name="project_name" value="Wind Rose">
+              <input type="hidden" name="project_email" value="mail@gmail.com">
+              <input type="hidden" name="form_subject" value="Заяка с сайта - Роза ветров">
+
+              <input type="hidden" name="Страница" value="Оформление заказа на доставку еды">
+
+              <div class="ordering-form__group ordering-form__contacts ordering-form__group--lg">
+                <fieldset class="ordering-form__group-top">
+                  <legend class="form-legend">Контакты</legend>
+                  <input class="form-input ordering-form__input-tel form-input--lg" name="user-tel" type="tel" inputmode="tel" placeholder="Телефон*" required>
+                  <input class="form-input form-input--lg ordering-form__input-name" name="user-name" type="text" inputmode="text" placeholder="Имя">
+                </fieldset>
+                
+                <fieldset class="ordering-form__group-bottom">
+                  <legend class="form-legend">Адрес</legend>
+                  <select class="form-select" name="list-city">
+                    <option value="Москва" selected>Москва</option>
+                    <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                    <option value="Самара">Самара</option>
+                  </select>
+                  <div class="ordering-form__input-top">
+                    <input class="form-input form-input--lg" name="street" type="text" inputmode="text" placeholder="Улица*" required>
+                    <input class="form-input form-input--sm" name="house" type="text" inputmode="text" placeholder="Дом*" required>
+                    <input class="form-input form-input--sm" name="housing" type="text" inputmode="text" placeholder="Корпус">
+                    <input class="form-input form-input--sm" name="structure" type="number" inputmode="numeric" placeholder="Строение">
+                  </div>
+                  <div class="ordering-form__input-bottom">
+                    <input class="form-input form-input--lg" name="flat" type="number" inputmode="numeric" placeholder="№ квартиры/офиса">
+                    <input class="form-input form-input--sm" name="porch" type="number" inputmode="numeric" placeholder="Подъезд">
+                    <input class="form-input form-input--sm" name="floor" type="number" inputmode="numeric" placeholder="Этаж">
+                    <input class="form-input form-input--sm" name="intercom" type="number" inputmode="numeric" placeholder="Домофон">
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="ordering-form__group ordering-form__group-date ordering-form__group--sm">
+                
+                <fieldset class="ordering-form__group-top ordering-form__group-top-time">
+                  <legend class="form-legend">Дата и время</legend>
+                  <div class="ordering-form__input-title input-width">
+                    <label>
+                      <span>Дата</span> 
+                      <input class="form-input input-date" type="date" name="user-date" inputmode="numeric">
+                    </label>
+                  </div>
+                  <div class="ordering-form__input-title ordering-form__input-time">
+                    <label>
+                      <span>Время</span>
+                      <input class="form-input form-input form-input--md" name="user-time" type="time" inputmode="numeric">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="ordering-form__group-bottom">
+                  <legend class="form-legend">Способ оплаты</legend>
+                  <div class="ordering-form__input-top">
+                    <select class="form-select payment-method" name="payment-method">
+                      <option value="" hidden selected>Способ оплаты</option>
+                      <option value="Наличными">Наличными</option>
+                      <option value="По карте">По карте</option>
+                    </select>
+                  </div>
+                  <div class="ordering-form__input-bottom">
+                    <input class="form-input ordering-form__input-lease form-input--sm" name="lease" type="number" inputmode="decimal" placeholder="Сдача с">
+                    <div class="ordering-form__input-title">
+                      <label class="form-checkbox">
+                        <input class="visually-hidden form-checkbox__input" type="checkbox" name="no-change">
+                        <span class="form-checkbox__label label-checkbox">Без сдачи</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                
+              </div>
+
+              <div class="ordering-form__group ordering-form__group--md">
+              
+                <fieldset class="ordering-form__group-top ordering-form__group-note">
+                  <legend class="form-legend">Примечания</legend>
+                  <textarea class="form-textarea ordering-form__textarea" name="user-comment" cols="30" rows="10" placeholder="Оставьте комментарий"></textarea>
+                </fieldset>
+
+                <div class="ordering-form__group-info">
+                  <p class="total-price">
+                    К оплате:
+                    <span class="total-price__price">570 руб</span>
+                  </p>
+                  
+                  <button class="btn btn--green btn--sm" type="submit">Отправить</button>
+                  <small class="form-warning">Нажимая кнопку Отправить, вы даете Согласие на обработку персональных данных и принимаете Договор оферты</small>
+                </div>
+              
+              </div>
+
+            </form>
+
+          </div><!-- /.tab .ordering-tab__content -->
+
+          <div class="tab ordering-tab__content ordering-tab__content--pickup ordering-tab-2">
+            <form class="ordering-form" action="/" name="form-delivery">
+            
+              <div class="success" style="display: none;"><span>Спасибо за заявку</span></div>
+            
+              <input type="hidden" name="project_name" value="Wind Rose">
+              <input type="hidden" name="project_email" value="mail@gmail.com">
+              <input type="hidden" name="form_subject" value="Заяка с сайта - Роза ветров">
+            
+              <input type="hidden" name="Страница" value="Оформление заказа на доставку еды">
+            
+              <div class="ordering-form__group ordering-form__contacts ordering-form__group--lg">
+                <fieldset class="ordering-form__group-top">
+                  <legend class="form-legend">Контакты</legend>
+                  <input class="form-input ordering-form__input-tel form-input--lg" name="user-tel" type="tel" inputmode="tel"
+                    placeholder="Телефон*" required>
+                  <input class="form-input form-input--lg ordering-form__input-name" name="user-name" type="text" inputmode="text"
+                    placeholder="Имя">
+                </fieldset>
+
+                <!-- Mobile -->
+
+                <div class="ordering-form__group--mobile ordering-form__group-date ordering-form__group--sm">
+                
+                  <fieldset class="ordering-form__group-top ordering-form__group-top-time">
+                    <legend class="form-legend">Дата и время</legend>
+                    <div class="ordering-form__input-title input-width">
+                      <label>
+                        <span>Дата</span>
+                        <input class="form-input input-date" type="date" name="user-date" inputmode="numeric">
+                      </label>
+                    </div>
+                    <div class="ordering-form__input-title ordering-form__input-time">
+                      <label>
+                        <span>Время</span>
+                        <input class="form-input form-input form-input--md" name="user-time" type="time" inputmode="numeric">
+                      </label>
+                    </div>
+                  </fieldset>
+                
+                </div>
+
+                <div class="ordering-form__group--mobile ordering-form__group--md">
+                
+                  <fieldset class="ordering-form__group-top ordering-form__group-note">
+                    <legend class="form-legend">Примечания</legend>
+                    <textarea class="form-textarea ordering-form__textarea" name="user-comment" cols="30" rows="10"
+                      placeholder="Оставьте комментарий"></textarea>
+                  </fieldset>
+                
+                </div>
+            
+                <fieldset class="ordering-form__group-bottom">
+                  <legend class="form-legend">Способ оплаты</legend>
+                  <div class="ordering-form__input-top">
+                    <select class="form-select payment-method" name="payment-method">
+                      <option value="" hidden selected disabled>Способ оплаты</option>
+                      <option value="Наличными">Наличными</option>
+                      <option value="По карте">По карте</option>
+                    </select>
+                  </div>
+                  <div class="ordering-form__input-bottom">
+                    <input class="form-input ordering-form__input-lease form-input--sm" name="lease" type="number" inputmode="decimal"
+                      placeholder="Сдача с">
+                    <div class="ordering-form__input-title">
+                      <label class="form-checkbox">
+                        <input class="visually-hidden form-checkbox__input" type="checkbox" name="no-change">
+                        <span class="form-checkbox__label label-checkbox">Без сдачи</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            
+              <div class="ordering-form__group ordering-form__group-date ordering-form__group--sm">
+            
+                <fieldset class="ordering-form__group-top ordering-form__group-top-time">
+                  <legend class="form-legend">Дата и время</legend>
+                  <div class="ordering-form__input-title input-width">
+                    <label>
+                      <span>Дата</span>
+                      <input class="form-input input-date" type="date" name="user-date" inputmode="numeric">
+                    </label>
+                  </div>
+                  <div class="ordering-form__input-title ordering-form__input-time">
+                    <label>
+                      <span>Время</span>
+                      <input class="form-input form-input form-input--md" name="user-time" type="time" inputmode="numeric">
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="ordering-form__group-info">
+                  <p class="total-price">
+                    К оплате:
+                    <span class="total-price__price">570 руб</span>
+                  </p>
+                
+                  <button class="btn btn--green btn--sm" type="submit">Отправить</button>
+                  <small class="form-warning">Нажимая кнопку Отправить, вы даете Согласие на обработку персональных данных и
+                    принимаете Договор оферты</small>
+                </div>
+            
+              </div>
+            
+              <div class="ordering-form__group ordering-form__group--md">
+            
+                <fieldset class="ordering-form__group-top ordering-form__group-note">
+                  <legend class="form-legend">Примечания</legend>
+                  <textarea class="form-textarea ordering-form__textarea" name="user-comment" cols="30" rows="10"
+                    placeholder="Оставьте комментарий"></textarea>
+                </fieldset>
+
+              </div>
+            
+            </form>
+          </div><!-- /.tab .ordering-tab__content -->
+
+        </div>
+
+      </div><!-- /.container -->
+
+    </section>
+
+  </main>
+
+  <div class="footer" style="background-image: url('images/footer-bg-image.jpg');">
+    <div class="container">
+
+      <div class="footer__inner">
+
+        <div class="footer__info-left">
+          <a class="footer__tel-link" href="tel:+74952959094">
+            <svg class="icon icon-mobile">
+              <use xlink:href="images/sprites/sprite.svg#mobile"></use>
+            </svg>
+            <span class="footer__tel">+74952959094</span>
+          </a>
+          <button class="footer__booking-link" type="button">Забронировать столик</button>
+        </div>
+
+        <div class="logo footer__logo">
+          <a href="/">
+            <picture>
+              <source srcset="images/logo-company-footer.png" media="(max-width: 781px)">
+              <img src="images/logo-company.png" alt="Логотип ресторана - Роза ветров">
+            </picture>
+          </a>
+        </div>
+
+        <div class="footer__info-right">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" target="_blank">
+                <svg class="icon icon-instagram-logo">
+                  <use xlink:href="images/sprites/sprite.svg#instagram-logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">Роза Ветров. 2020 г.</p>
+        </div>
+      
+      </div><!-- /.footer__inner -->
+
+      <p class="footer__copyright-bottom">Роза Ветров. 2020 г.</p>
+
+    </div><!-- /.container -->
+  </div><!-- /.footer -->
+
+  <div class="form form-contact-us">
+    <div class="form-feedback__inner">
+  
+      <span class="form-feedback__icon">
+        <svg class="icon icon-smile">
+          <use xlink:href="images/sprites/sprite.svg#smile"></use>
+        </svg>
+      </span>
+      <button type="button" class="form-feedback__close">
+        <svg class="icon icon-cancel">
+          <use xlink:href="images/sprites/sprite.svg#cancel"></use>
+        </svg>
+      </button>
+  
+      <p class="form__title">Мы свяжемся с Вами!</p>
+      <p class="form__text">Заполните форму и в течение 10 минут мы свяжемся с Вами.</p>
+  
+      <form class="form-feedback__form" name="form-contact-us" action="/">
+
+        <div class="form-success">
+          <span class="form-success__icon">
+            <svg class="icon icon-smile">
+              <use xlink:href="images/sprites/sprite.svg#smile"></use>
+            </svg>
+          </span>
+        
+          <p class="form__title">Спасибо за заказ!</p>
+          <p class="form__text">В течение 10 минут мы свяжемся с вами для подтверждения заказа.</p>
+        
+          <button class="btn btn--sm btn--green form-feedback__btn form-success__btn" type="button">Вернуться на главную</button>
+        </div>
+        
+        <input type="hidden" name="project_name" value="Wind Rose">
+        <input type="hidden" name="project_email" value="mail@gmail.com">
+        <input type="hidden" name="form_subject" value="Заяка с сайта - Роза ветров">
+
+        <div class="form-feedback__form-group form__group">
+          <input class="form-input form-feedback__input" type="tel" inputmode="tel" name="client-tel" placeholder="Телефон*" required>
+          <input class="form-input form-feedback__input" type="text" inputmode="text" name="client-name" placeholder="Имя">
+        </div>
+        <button class="btn btn--sm btn--green form-feedback__btn" type="submit">Отправить</button>
+      </form>
+  
+    </div>
+  </div>
+
+  <p class="hide dishes-category-mobile__category-text"></p>
+
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
